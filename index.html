@@ -11,7 +11,8 @@
 
   <!-- Optimasi Mesin Pencari oleh Rank Math - https://rankmath.com/ -->
   <title>Rama 💕 Vania</title>
-  <meta name="description" content="Merupakan suatu kebahagiaan bagi kami untuk mengundang Bapak/Ibu/Saudara/i hadir pada pernikahan Rama &amp; Vania. Sabtu, 19 September 2026. Doa restu Anda sangat berarti bagi kami.">
+  <meta name="description"
+    content="Merupakan suatu kebahagiaan bagi kami untuk mengundang Bapak/Ibu/Saudara/i hadir pada pernikahan Rama &amp; Vania. Sabtu, 19 September 2026. Doa restu Anda sangat berarti bagi kami.">
   <meta name="robots" content="nofollow, noindex">
   <meta property="og:locale" content="id_ID">
   <meta property="og:type" content="article">
@@ -4225,6 +4226,40 @@
                   data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:200,&quot;_animation_mobile&quot;:&quot;zoomIn&quot;}"
                   data-widget_type="heading.default">
                   <div class="elementor-widget-container">
+                    <script>
+                      (function () {
+                        function syncKadoHeight() {
+                          try {
+                            var items = document.querySelectorAll(".jet-listing-grid__items .jet-listing-grid__item");
+                            var bankInner = null, kadoInners = [];
+                            items.forEach(function (it) {
+                              var inner = it.querySelector(".elementor-element-d5f43e1");
+                              if (!inner) return;
+                              if (it.querySelector("#kado_copy_btn")) {
+                                kadoInners.push(inner);
+                                var box = it.querySelector(".elementor-element-68b09b2");
+                                if (box && !box.classList.contains("kado-box")) box.classList.add("kado-box");
+                              } else {
+                                bankInner = inner;
+                              }
+                            });
+                            if (!bankInner || !kadoInners.length) return;
+                            var h = bankInner.getBoundingClientRect().height;
+                            if (!h || h < 50) return;
+                            bankInner.style.height = "";
+                            kadoInners.forEach(function (k) {
+                              k.style.height = h + "px";
+                              k.style.overflow = "hidden";
+                            });
+                          } catch (e) { }
+                        }
+                        document.addEventListener("DOMContentLoaded", syncKadoHeight);
+                        window.addEventListener("load", syncKadoHeight);
+                        window.addEventListener("resize", syncKadoHeight);
+                        setInterval(syncKadoHeight, 700);
+                        setTimeout(syncKadoHeight, 300);
+                      })();
+                    </script>
                     <p class="elementor-heading-title elementor-size-default">Wedding Gift</p>
                   </div>
                 </div>
@@ -4235,7 +4270,8 @@
                   data-widget_type="heading.default">
                   <div class="elementor-widget-container">
                     <span class="elementor-heading-title elementor-size-default">Bagi bapak/ibu/saudara/i yang ingin
-                      mengirimkan hadiah pernikahan dapat melalui nomer rekening di bawah ini</span>
+                      mengirimkan hadiah pernikahan dapat melalui nomer rekening di bawah ini atau
+                      mengirimkan kado ke alamat yang tertera</span>
                   </div>
                 </div>
                 <div
@@ -4519,6 +4555,92 @@
                                                   </div>
                                                 </div>
                                               </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="jet-listing-grid__item jet-listing-dynamic-post-4620 elementor-dcss-18080276040835024"
+                                data-post-id="4620">
+                                <div data-elementor-type="jet-listing-items" data-elementor-id="14"
+                                  class="elementor elementor-14"
+                                  data-elementor-settings="{&quot;ha_cmc_init_switcher&quot;:&quot;no&quot;}"
+                                  data-elementor-post-type="jet-engine">
+                                  <div
+                                    class="elementor-element elementor-element-68b09b2 e-flex e-con-boxed e-con e-child"
+                                    data-id="68b09b2" data_element_type="container" data-e-type="container"
+                                    data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="e-con-inner">
+                                      <div
+                                        class="elementor-element elementor-element-d5f43e1 e-flex e-con-boxed e-con e-child"
+                                        data-id="d5f43e1" data_element_type="container" data-e-type="container"
+                                        style="background-color:#efefef !important; background-image:radial-gradient(rgba(0,0,0,.07) 1.5px,transparent 1.6px) !important; background-size:16px 16px !important; border-radius:10px !important; display:flex !important; flex-direction:column !important;"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+                                        <div class="e-con-inner"
+                                          style="height:100% !important; display:flex !important; flex-direction:column !important;">
+                                          <div
+                                            style="display:flex !important; flex-direction:row !important; align-items:center !important; justify-content:space-between !important; width:100%; padding:14px 10px 4px 8px !important;">
+                                            <p
+                                              style="margin:2px 0 0 0 !important; text-align:left !important; color:#5a5a5a !important; font-weight:700 !important; font-size:12px !important;">
+                                              Alamat Pengiriman Kado</p>
+                                            <i class="fa-solid fa-gift"
+                                              style="font-size:30px !important; color:#8a8a8a !important; margin-right:8px !important;"></i>
+                                          </div>
+                                          <div
+                                            style="margin-top:auto !important; display:flex !important; flex-direction:row !important; align-items:flex-end !important; justify-content:space-between !important; padding:0 8px 10px !important; width:100% !important; box-sizing:border-box !important;">
+                                            <div
+                                              style="width:62% !important; flex:0 0 62% !important; max-width:62% !important; padding-right:4px !important; box-sizing:border-box !important; text-align:left !important; margin-bottom:6px !important;">
+                                              <p
+                                                style="margin:0 !important; color:#4a4a4a !important; font-size:10px !important; line-height:1.35 !important; font-weight:600 !important; font-family:'Nunito',sans-serif !important; overflow-wrap:anywhere;">
+                                                Jl. Raya Tegar Beriman No. 23 RT. 01/04 Kp. Curug (Gg. Damai 01),
+                                                Cibinong, Kab. Bogor, Jawa Barat 16915</p>
+                                              <p
+                                                style="margin:14px 0 0 0 !important; color:#4a4a4a !important; font-size:11px !important; font-weight:700 !important; font-family:'Nunito',sans-serif !important;">
+                                                a/n Rama &amp; Vania</p>
+                                            </div>
+                                            <div
+                                              style="width:38% !important; flex:0 0 38% !important; max-width:38% !important; display:flex !important; justify-content:flex-end !important; box-sizing:border-box !important; padding-bottom:2px !important;">
+                                              <a class="elementor-button" role="button" id="kado_copy_btn" href="#"
+                                                style="background:#767676 !important; color:#ffffff !important; border:none !important; border-radius:3px; padding:11px 20px; font-size:14px; display:inline-flex !important; align-items:center !important;"
+                                                data-clipboard-text="Jl. Raya Tegar Beriman No. 23 RT. 01/04 Kp. Curug (Gg. Damai 01), Cibinong, Kab. Bogor, Jawa Barat 16915"><i
+                                                  class="far fa-copy" aria-hidden="true"
+                                                  style="margin-right:10px;"></i><span>Salin</span></a>
+                                              <script type="text/javascript">
+                                                document.getElementById('kado_copy_btn').onclick = function (e) {
+                                                  e.preventDefault();
+                                                  var btn = this;
+                                                  var text = btn.getAttribute('data-clipboard-text');
+                                                  var span = btn.querySelector('span');
+                                                  var originalText = span.innerHTML;
+
+                                                  navigator.clipboard.writeText(text).then(function () {
+                                                    span.textContent = "Berhasil Di Salin";
+                                                    setTimeout(function () {
+                                                      span.innerHTML = originalText;
+                                                    }, 1000);
+                                                  }).catch(function () {
+                                                    var temp = document.createElement("textarea");
+                                                    temp.value = text;
+                                                    temp.style.position = "fixed";
+                                                    document.body.appendChild(temp);
+                                                    temp.select();
+                                                    try {
+                                                      document.execCommand("copy");
+                                                      span.textContent = "Berhasil Di Salin";
+                                                    } catch (err) {
+                                                      span.textContent = "Gagal Salin";
+                                                    }
+                                                    document.body.removeChild(temp);
+                                                    setTimeout(function () {
+                                                      span.innerHTML = originalText;
+                                                    }, 1000);
+                                                  });
+                                                };
+                                              </script>
                                             </div>
                                           </div>
                                         </div>
